@@ -1,0 +1,6 @@
+{
+  "use_proxy": false,
+  "proxy_url": "socks5://127.0.0.1:7891",
+  "download_path": "./download",
+  "media_domain": "http://onesfish.com"
+}

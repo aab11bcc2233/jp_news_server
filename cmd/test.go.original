@@ -1,0 +1,48 @@
+package main
+
+import (
+	"fmt"
+	"jpnews/internal/pkg/util/myrequest"
+	"log"
+	"strings"
+)
+
+//var master = `
+//#EXTM3U
+//#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=64000,CODECS="mp4a.40.2",CLOSED-CAPTIONS=NONE
+//https://nhks-vh.akamaihd.net/i/news/easy/k10012041781000.mp4/index_0_a.m3u8?null=0&id=AgDOvdb8aFBZZHARXl31qLGrQbtoMEvPaeeRlaI%2feg5aAGf0NFNltU22W3HTqqHeMCY4OUmdruXftQ%3d%3d
+//`
+
+func main() {
+
+	baseUrl := "https://nhks-vh.akamaihd.net/i/news/easy"
+	voiceUrl := baseUrl + "/k10012041781000.mp4/master.m3u8"
+
+
+
+	//masterM3u8RespContent, err := myrequest.RequestGet(voiceUrl)
+	//if err != nil {
+	//	log.Fatalf("failed: %s", err)
+	//}
+	//
+	//masterM3u8 := string(masterM3u8RespContent)
+	//
+	//urlIndex := strings.Index(masterM3u8, "http")
+	//if urlIndex == -1 {
+	//
+	//}
+	//
+	//indexMasterM3u8Url := masterM3u8[urlIndex:]
+	//indexMasterM3u8Url = strings.TrimFunc(indexMasterM3u8Url, func(r rune) bool {
+	//	return r == '\n' || r == ' '
+	//})
+	//
+	//respContent, err := myrequest.RequestGet(indexMasterM3u8Url)
+	//if err != nil {
+	//	log.Fatalf("failed: %s", err)
+	//}
+	//
+	//indexMasterM3u8 := string(respContent)
+	//
+	//fmt.Println(indexMasterM3u8)
+}
